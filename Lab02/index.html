@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VR Three.js</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="importmap">
+      {
+        "imports": {
+         
+          "three": "./build/three.module.js",
+          "VRButton": "./build/jsm/webxr/VRButton.js",
+          "XRControllerModelFactory": "./build/jsm/webxr/XRControllerModelFactory.js",
+          "three/addons/": "../build/jsm/"
+       
+        }
+      }
+    </script>
+    <script type="module" src="main.mjs"></script>
+  </body>
+</html>
